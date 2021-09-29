@@ -1,0 +1,239 @@
+
+/* ==== Селекторы контейнеров ==== */
+
+.mainArea {
+  width: 1150px;
+  height: 580px;
+  margin: 0px 0px 0px auto;
+  padding: 4px 4px 4px 4px; 
+  border-radius: 3px;
+  border: 1px solid #DCDCDC;
+  background-color: #DCDCDC;
+
+  /*position: absolute;*/
+}
+
+.containerForGroupOfTask {
+  margin: 0px 4px 0px 0px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #C0C0C0;   
+  background-color: #C0C0C0; 
+}
+
+.nameOfGroupOfTask {
+  width: 206px;
+  height: 18px;
+  margin: 6px 0px 4px 6px;
+  padding: 0px 0px 0px 4px; 
+  border-radius: 3px;
+  border: 1px solid #A9A9A9; 
+  background-color: #A9A9A9; 
+  cursor: default;
+  text-align: left; 
+  font-family: Georgia;
+}
+
+.groupOfTask {
+  width: 225px;
+  height: 540px;
+  margin: 0px 0px 0px 0px;
+  padding: 2px 2px 2px 2px; 
+  border-radius: 3px;
+  border: 1px solid #C0C0C0;
+  background-color: #C0C0C0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  display: block;
+}
+
+.orderForNewTask {
+  width: 218px;
+  height: 125px;
+  margin: 0px 0px 6px 0px; 
+  padding: 0px 0px 0px 0px;
+}
+
+.taskContainer {
+  width: 275px;
+  height: 84px;
+  margin: 0px 0px 6px 0px; 
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  overflow: visible;
+}
+
+.boxForButton {
+  left: 70px;
+  width: 135px;
+  position: relative;
+}
+
+/* ==== Селекторы кнопок ==== */
+
+button {
+  color: #000000;
+  border-radius: 3px;
+  border: 1px solid #A9A9A9;
+  background-color: #A9A9A9;
+  padding: 0px 0px 0px 0px; 
+  cursor: pointer;
+  text-align: left;
+  font-family: Georgia;
+}
+
+button:hover {
+  color:            #000000;
+  border-color:     #00BFFF; 
+  background-color: #00BFFF;
+}
+
+.taskCreateButton {
+  width:   212px;
+  height:  25px;
+  margin:  0px 0px 0px 2px;
+  padding: 0px 0px 0px 4px;
+}
+
+.taskAddButton {
+  margin:  0px 4px 0px 0px;
+  padding: 4px 4px 4px 4px;
+}
+
+.taskCancelAddingButton {
+  padding: 4px 4px 4px 4px;
+}
+
+/* ==== Селекторы текстовых полей ==== */
+
+textarea {
+  margin: 0px 0px 0px 2px;
+  padding: 4px 4px 4px 4px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  cursor: default;
+  resize:  none;
+  outline: none;
+  text-align: left;
+  overflow-y: scroll;
+  font-family: Georgia;
+}
+
+.forTextOfTask {
+  width: 200px;
+  height: 110px;
+  border: 2px solid #4169E1;
+}
+
+.textOfTask {
+  width: 202px;
+  height: 74px;
+}
+
+.textOfTask:hover {
+  border: 1px solid #daf7f5;
+  background-color: #daf7f5;
+}
+
+/* ==== ==== Селекторы полос прокрутки ==== ==== ==== ==== */
+
+::-webkit-scrollbar {
+    width: 8px;  
+    border-radius: 2px;
+    border: 0px solid #C0C0C0;
+    background-color: #A9A9A9;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    border: 0px solid #808080;
+    background-color: #808080;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00BFFF;
+}
+
+textarea::-webkit-scrollbar {
+    border: 0px solid #ffffff;
+}
+
+.textOfTask::-webkit-scrollbar:hover {
+  border: 0px solid #AFEEEE;
+}
+
+/* ==== ==== ... ==== ==== ==== ==== */
+
+button.menu,
+button.actionMoveTo,
+button.actionEdit,
+button.actionDelete,
+button[class^="moveTo"] {
+  width:  100%;
+  height: 25px;
+  color: #000000;
+  border-radius: 5px;
+  border: 0px solid #DCDCDC;
+  background-color: #DCDCDC;
+  padding: 0px 0px 0px 4px;
+}
+
+button.menu {
+  opacity: 0;
+  top:    8px; 
+  left: -64px; 
+  width:  48px;
+  margin-right: 4px;
+  padding-left: 0px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+
+button.menu:hover {
+  opacity: 0.5;
+}
+
+button.actionMoveTo:hover,
+button.actionEdit:hover,
+button.actionDelete:hover,
+button[class^="moveTo"]:hover {
+  border: 0px solid #C0C0C0;
+  background-color: #C0C0C0;
+}
+
+.actionsList,
+.nestedActionsList
+ {
+  width:    105px;
+  border-radius: 5px;
+  border:   0px solid #ffffff;
+  padding:  0px 0px 0px 0px;
+  display:  block;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
